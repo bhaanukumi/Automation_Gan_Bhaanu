@@ -10,7 +10,7 @@ import utilities.TestdataUtil;
 import static stepdefinition.CommonStepDef.*;
 import static stepdefinition.LoginStepDef.strAppVersion;
 
-@CucumberOptions(features = {"Automation_Gan_Bhaanu/Automation_Ganesh/src/test/resources/features"},
+@CucumberOptions(features = {"src/test/resources/features"},
         monochrome = true,
         glue = {"stepdefinition"},
         plugin = {

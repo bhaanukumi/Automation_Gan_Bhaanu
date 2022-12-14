@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 140.377 sec - in TestSuite
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 0.711 sec <<< FAILURE! - in TestSuite
+setUpClass(runner.TestRunnerTestng)  Time elapsed: 0.625 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: path must exist: E:\Automation_Gan_Bhaanu\Automation_Gan_Bhaanu\Automation_Ganesh\src\test\resources\features
+

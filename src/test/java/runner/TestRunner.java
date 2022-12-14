@@ -21,7 +21,7 @@ import static stepdefinition.CommonStepDef.browserversion;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-		features = "/Automation_Gan_Bhaanu/Automation_Ganesh/src/test/resources/features",
+		features = "src/test/resources/features",
 		glue = "stepdefinition",
 		dryRun = false,
 		monochrome = true,
