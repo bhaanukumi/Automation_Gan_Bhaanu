@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="82633" started-at="2022-12-14T19:00:46 IST" finished-at="2022-12-14T19:02:09 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerTestng@9a7504c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="82633" started-at="2022-12-14T19:00:46 IST" finished-at="2022-12-14T19:02:09 IST">
+      <class name="runner.TestRunnerTestng">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunnerTestng@9a7504c]" name="setUpClass" is-config="true" duration-ms="729" started-at="2022-12-14T19:00:46 IST" finished-at="2022-12-14T19:00:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@64dc86c6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerTestng@9a7504c]" name="runScenario" duration-ms="51900" started-at="2022-12-14T19:00:47 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T19:01:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["This test use to verify login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Harry Harry"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerTestng@9a7504c]" name="runScenario" duration-ms="28411" started-at="2022-12-14T19:01:39 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T19:02:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["This test use to verify logout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Harry Harry"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:runner.TestRunnerTestng@9a7504c]" name="teardown" is-config="true" duration-ms="7" started-at="2022-12-14T19:02:08 IST" finished-at="2022-12-14T19:02:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunnerTestng@9a7504c]" name="tearDownClass" is-config="true" duration-ms="1561" started-at="2022-12-14T19:02:08 IST" finished-at="2022-12-14T19:02:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunnerTestng -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
