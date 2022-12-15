@@ -40,7 +40,7 @@ public class LoginPage {
 	@FindBy(xpath="//button/span/span[text()='MMHLOGO']")
 	private WebElement MMHLOGO;
 
-	@FindBy(how = How.XPATH, using = "//div[@class='appVersion']")
+	@FindBy(how = How.XPATH, using = "//div[@class='appVersion']/small")
 	public WebElement txtAppVersion;
 	
 	public void enterEmail(String email) {
