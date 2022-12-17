@@ -24,5 +24,6 @@ pipeline {
     emailext body: 'EmailBody1', subject: 'EmailSubject1', to: 'bhaanureaka@gmail.com'
     }
     }
+    
   
 }
