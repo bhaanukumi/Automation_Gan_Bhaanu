@@ -31,8 +31,14 @@ public class CommonUtils {
 	}
 	
 	//config file loader
-	public void loadProperties() {
+	@Parameters("Browser")
+	public void loadProperties(String strBrowsernameJenkinsParameter) {
 
+
+		System.out.println("Inside loadProperties");
+		System.out.println("Jenkins parameter is: "+strBrowsernameJenkinsParameter);
+
+		System.out.println("URL is: "+Constants.APP_URL);
 		Properties properties =new Properties();
 		try {
 			properties.load(getClass().getResourceAsStream("/config.properties"));
