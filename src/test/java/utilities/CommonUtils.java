@@ -32,7 +32,7 @@ public class CommonUtils {
 	
 	//config file loader
 
-	public void loadProperties(String strBrowsernameJenkinsParameter) {
+	public void loadProperties() {
 
 
 		System.out.println("Inside loadProperties");
