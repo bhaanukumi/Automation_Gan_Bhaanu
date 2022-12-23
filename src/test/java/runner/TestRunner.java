@@ -1,3 +1,4 @@
+/*
 package runner;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -68,10 +69,12 @@ public class TestRunner extends AbstractTestNGCucumberTests{
 		}
 		//DriverManager manager = new DriverManager();
 		//WebDriver driver = manager.getDriver();
-		/*String browsername = ((RemoteWebDriver) DriverManager.getDriver()).getCapabilities().getBrowserName();
+		*/
+/*String browsername = ((RemoteWebDriver) DriverManager.getDriver()).getCapabilities().getBrowserName();
 		System.out.println("browserName is:"+browsername);
 		String browserversion = ((RemoteWebDriver) DriverManager.getDriver()).getCapabilities().getVersion();
-		System.out.println("browserVersion is:"+browserversion);*/
+		System.out.println("browserVersion is:"+browserversion);*//*
+
 
 
 		//String browsername = null;
@@ -95,12 +98,14 @@ public class TestRunner extends AbstractTestNGCucumberTests{
 			System.out.println("Browser Name value is: "+browsername);
 			System.out.println("Browser Version value is: "+browserversion);
 
-			/*ExtentService.getInstance().setSystemInfo("App Name", "https://v2webfeature.mmh-demo.com");
+			*/
+/*ExtentService.getInstance().setSystemInfo("App Name", "https://v2webfeature.mmh-demo.com");
 			ExtentService.getInstance().setSystemInfo("Os Name", System.getProperty("os.name"));
 			ExtentService.getInstance().setSystemInfo("Os Version", "10");
 			ExtentService.getInstance().setSystemInfo("Browser Name", "CHROME");
 			ExtentService.getInstance().setSystemInfo("Browser Version", "106");
-			ExtentService.getInstance().setSystemInfo("User Name", "Bhaanureaka");*/
+			ExtentService.getInstance().setSystemInfo("User Name", "Bhaanureaka");*//*
+
 
 
 			ExtentReports extentReports = ExtentService.getInstance();
@@ -119,3 +124,4 @@ public class TestRunner extends AbstractTestNGCucumberTests{
 
 	}
 }
+*/
