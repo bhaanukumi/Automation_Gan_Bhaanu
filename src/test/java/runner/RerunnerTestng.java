@@ -40,7 +40,7 @@ import static stepdefinition.LoginStepDef.strAppVersion;
         ExtentService.getInstance().setSystemInfo("Execution Machine", strSystemName);
         ExtentService.getInstance().setSystemInfo("Automation QA", System.getProperty("user.name"));
         */
-
+        System.out.println("This is a RerunnerTestng teardown method");
 
         ExtentReports extentReports = ExtentService.getInstance();
         extentReports.setSystemInfo("Application Name", "MMH-NZ V2 Feature Development");
