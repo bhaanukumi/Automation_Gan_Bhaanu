@@ -1,6 +1,14 @@
 @LoginHarry
 Feature: Login Harry Harry
 
+  Scenario Outline: Changing machines timezone
+
+    Given I change Windows "<TimeZone>"
+
+    Examples:
+      | TimeZone                  |
+      | New Zealand Standard Time |
+
   Scenario Outline: This test use to verify login
     Given the url hit in successfully
     And login button clicked successfully
@@ -21,7 +29,7 @@ Feature: Login Harry Harry
     And Enter the Password as "Password"
     And Click the Login button
     Then User logged in successfully
-    #Then I click MMH Logo
+    Then I click MMH Logo
     And Click signout button
 
     Examples:

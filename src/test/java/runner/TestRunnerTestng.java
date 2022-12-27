@@ -1,15 +1,15 @@
 package runner;
 
-
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.service.ExtentService;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.AfterClass;
 import utilities.TestdataUtil;
+import utilities.WindowsProcessUtil;
 
 import static stepdefinition.CommonStepDef.*;
+import static stepdefinition.LoginStepDef.pb;
 import static stepdefinition.LoginStepDef.strAppVersion;
 
 @CucumberOptions(features = {"src/test/resources/features"},
@@ -55,6 +55,10 @@ public class TestRunnerTestng extends AbstractTestNGCucumberTests {
         extentReports.setSystemInfo("Browser Version", browserversion);
         extentReports.setSystemInfo("Execution Machine", strSystemName);
         extentReports.setSystemInfo("Automation QA", System.getProperty("user.name"));
+
+        //Stop Windows Service
+        WindowsProcessUtil.stopProcess(pb);
+        System.out.println("TimeZone Changed to IST");
 
 
     }

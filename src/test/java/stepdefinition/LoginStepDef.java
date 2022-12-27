@@ -10,6 +10,7 @@ import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import page_objects.LoginPage;
 import utilities.TestdataUtil;
+import utilities.WindowsProcessUtil;
 import webdriver_manager.DriverManager;
 
 public class LoginStepDef {
@@ -18,6 +19,7 @@ public class LoginStepDef {
 	private static final Logger LOGGER = LogManager.getLogger(LoginStepDef.class);
 	public static String strAppVersion;
 
+	public static Process pb = null;
 
 	@Given("the url hit in successfully")
 	public void the_url_hit_in_successfully() {
@@ -139,6 +141,20 @@ public class LoginStepDef {
 				LOGGER.error(e);
 				Assert.fail(e.getMessage());
 			}
+
+	}
+
+    @Given("I change Windows {string}")
+    public void iChangeWindows(String strTimeZone) {
+		try {
+			System.out.println("Inside iChangeWindows"+strTimeZone);
+			pb = WindowsProcessUtil.startTimeZoneProcess(strTimeZone);
+			Thread.sleep(5);
+			//Stop Windows Service
+			//WindowsProcessUtil.stopProcess(pb);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 	}
 }

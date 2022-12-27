@@ -38,4 +38,6 @@ public class Constants {
 
 	public static String TESTDATA_FIELDS= "KEY";
 
+	public static final String WINAPP_DRIVER_EXE_DIRECTORY = "C:/Program Files (x86)/Windows Application Driver/WinAppDriver.exe";
+
 }

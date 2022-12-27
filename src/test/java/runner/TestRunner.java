@@ -1,5 +1,4 @@
-/*
-package runner;
+/*package runner;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.service.ExtentService;
@@ -69,7 +68,7 @@ public class TestRunner extends AbstractTestNGCucumberTests{
 		}
 		//DriverManager manager = new DriverManager();
 		//WebDriver driver = manager.getDriver();
-		*/
+
 /*String browsername = ((RemoteWebDriver) DriverManager.getDriver()).getCapabilities().getBrowserName();
 		System.out.println("browserName is:"+browsername);
 		String browserversion = ((RemoteWebDriver) DriverManager.getDriver()).getCapabilities().getVersion();

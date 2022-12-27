@@ -38,6 +38,9 @@ public class LoginPage {
 	@FindBy(xpath="//button/span/span[text()='SIGN OUT']")
 	private WebElement SIGNOUT;
 
+	//@FindBy(xpath="//img[@src='assets/images/MMH-logo.svg']")
+	//private WebElement MMHLOGO;
+
 	@FindBy(xpath="//button/span/span[text()='MMHLOGO']")
 	private WebElement MMHLOGO;
 
