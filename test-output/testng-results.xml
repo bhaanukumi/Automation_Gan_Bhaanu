@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="63599" started-at="2022-12-28T23:51:31 NZDT" finished-at="2022-12-28T23:52:35 NZDT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerTestng@5ce81285]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Automation_Gan_Bhaanu" duration-ms="63599" started-at="2022-12-28T23:51:31 NZDT" finished-at="2022-12-28T23:52:35 NZDT">
+      <class name="runner.TestRunnerTestng">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunnerTestng@5ce81285]" name="setUpClass" is-config="true" duration-ms="557" started-at="2022-12-28T23:51:31 NZDT" finished-at="2022-12-28T23:51:32 NZDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@47a3d56a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerTestng@5ce81285]" name="runScenario" duration-ms="2600" started-at="2022-12-28T23:51:32 NZDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-28T23:51:35 NZDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Changing machines timezone"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Harry Harry"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerTestng@5ce81285]" name="runScenario" duration-ms="36464" started-at="2022-12-28T23:51:35 NZDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-28T23:52:11 NZDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["This test use to verify login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Harry Harry"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunnerTestng@5ce81285]" name="runScenario" duration-ms="22701" started-at="2022-12-28T23:52:11 NZDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-28T23:52:34 NZDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["This test use to verify logout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Harry Harry"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button/span/span[text()='MMHLOGO']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-G0UQGSFP', ip: '192.168.0.134', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\BHAANU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6abd90c31d8bc1fbd5a4c4ff8b7621c2
+*** Element info: {Using=xpath, value=//button/span/span[text()='MMHLOGO']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: no such element: Unable to locate element: {"method":"xpath","selector":"//button/span/span[text()='MMHLOGO']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-G0UQGSFP', ip: '192.168.0.134', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\BHAANU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6abd90c31d8bc1fbd5a4c4ff8b7621c2
+*** Element info: {Using=xpath, value=//button/span/span[text()='MMHLOGO']}
+at org.junit.Assert.fail(Assert.java:89)
+at stepdefinition.LoginStepDef.iClickMMHLogo(LoginStepDef.java:142)
+at ✽.I click MMH Logo(file:///E:/Automation_Gan_Bhaanu/src/test/resources/features/Login.feature:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:runner.TestRunnerTestng@5ce81285]" name="teardown" is-config="true" duration-ms="1" started-at="2022-12-28T23:52:34 NZDT" finished-at="2022-12-28T23:52:34 NZDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunnerTestng@5ce81285]" name="tearDownClass" is-config="true" duration-ms="1255" started-at="2022-12-28T23:52:34 NZDT" finished-at="2022-12-28T23:52:35 NZDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunnerTestng -->
+    </test> <!-- Automation_Gan_Bhaanu -->
+  </suite> <!-- Default Suite -->
+</testng-results>
