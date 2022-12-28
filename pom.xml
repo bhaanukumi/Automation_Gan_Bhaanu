@@ -142,7 +142,7 @@
             <forkCount>0</forkCount>
             <suiteXmlFiles>
                 <suiteXmlFile>testng.xml</suiteXmlFile>
-                <suiteXmlFile>test-output/testng-failed.xml</suiteXmlFile>
+                <!--<suiteXmlFile>test-output/testng-failed.xml</suiteXmlFile>-->
             </suiteXmlFiles>
         </configuration>
     </plugin>
