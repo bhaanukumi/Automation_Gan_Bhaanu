@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.testng.annotations.Test;
 import webdriver_manager.DriverManager;
 
 public class LoginPage {
@@ -47,24 +48,24 @@ public class LoginPage {
 	@FindBy(how = How.XPATH, using = "//div[@class='appVersion']")
 	public WebElement txtAppVersion;
 
-
+    @Test
 	public void enterEmail(String email) {
 		EMAIL.sendKeys(email);
 	}
-	
+	@Test
 	public void enterPassword(String password) {
 		PASSWORD.sendKeys(password);		
 	}
-	
+	@Test
 	public void clickLoginButton() {
 		LOGIN.click();		
 	}
-	
+	@Test
 	public void clickSigninButton() {
 		SIGNIN.click();
 
 	}
-	
+	@Test
 	public void clickSignoutButton() {
        //boolean isClicked = false;
 
@@ -77,7 +78,7 @@ public class LoginPage {
 		//System.out.println("clickSignoutButton return value is :"+isClicked);
        //return isClicked;
 	}
-
+	@Test
 	public void click_MMH_logo(){
 		JavascriptExecutor executor = (JavascriptExecutor) DriverManager.getDriver();
 		executor.executeScript("arguments[0].click();", MMHLOGO);

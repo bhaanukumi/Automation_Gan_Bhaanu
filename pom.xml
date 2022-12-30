@@ -141,7 +141,7 @@
         <configuration>
             <forkCount>0</forkCount>
             <suiteXmlFiles>
-                <suiteXmlFile>${xmlSuiteFileName}</suiteXmlFile>
+                <!--<suiteXmlFile>${xmlSuiteFileName}</suiteXmlFile>-->
                 <!--<suiteXmlFile>${xmlSuiteFileNameFailed}</suiteXmlFile>-->
             </suiteXmlFiles>
         </configuration>
