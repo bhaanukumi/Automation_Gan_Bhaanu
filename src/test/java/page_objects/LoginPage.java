@@ -78,7 +78,7 @@ public class LoginPage {
 		//System.out.println("clickSignoutButton return value is :"+isClicked);
        //return isClicked;
 	}
-	
+
 	public void click_MMH_logo(){
 		JavascriptExecutor executor = (JavascriptExecutor) DriverManager.getDriver();
 		executor.executeScript("arguments[0].click();", MMHLOGO);
