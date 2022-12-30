@@ -141,7 +141,8 @@
         <configuration>
             <forkCount>0</forkCount>
             <suiteXmlFiles>
-                <suiteXmlFile>testng.xml</suiteXmlFile>
+                <suiteXmlFile>${xmlSuiteFileName}</suiteXmlFile>
+                <!--<suiteXmlFile>${xmlSuiteFileNameFailed}</suiteXmlFile>-->
             </suiteXmlFiles>
         </configuration>
     </plugin>
