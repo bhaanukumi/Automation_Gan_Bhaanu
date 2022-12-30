@@ -12,7 +12,7 @@ pipeline {
                
                 git 'https://github.com/bhaanukumi/Automation_Gan_Bhaanu.git'
 
-                bat "mvn clean test -Drunner=TestRunnerTestng"
+                bat "mvn clean test -Drunner=RerunnerTestng"
             }
 
             post {
