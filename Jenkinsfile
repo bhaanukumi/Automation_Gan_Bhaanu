@@ -1,29 +1,27 @@
 pipeline {
     agent any
 
+    tools {
+        
+        maven "MAVEN_HOME"
+    }
+
     stages {
         stage('Build') {
             steps {
-                echo 'This is a Build Stage'
+               
+                git 'https://github.com/bhaanukumi/Automation_Gan_Bhaanu.git'
+
+                bat "mvn clean test -Drunner=TestRunnerTestng"
             }
-        }
-        stage('Test') {
-            steps {
-                echo 'This is a Test Stage'
-            }
-        }
-         stage('Deploy') {
-            steps {
-                echo 'This is a Deploy Stage'
+
+            post {
+             
+                success {
+                    junit '**/target/surefire-reports/TEST-*.xml'
+                    archiveArtifacts 'target/*.jar'
+                }
             }
         }
     }
- post{
-    
-  always{
-    emailext body: 'EmailBody1', subject: 'EmailSubject1', to: 'bhaanureaka@gmail.com'
-    }
-    }
-    
-  
 }
