@@ -46,7 +46,8 @@ public class LoginPage {
 
 	@FindBy(how = How.XPATH, using = "//div[@class='appVersion']")
 	public WebElement txtAppVersion;
-	
+
+
 	public void enterEmail(String email) {
 		EMAIL.sendKeys(email);
 	}
