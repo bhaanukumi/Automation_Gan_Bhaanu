@@ -139,7 +139,11 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.19.1</version>
         <configuration>
-            <rerunFailingTestsCount>2</rerunFailingTestsCount>
+            <!-- Sets the VM argument line used for unit tests are run. -->
+            <suiteXmlFiles>
+                <!-- <suiteXmlFile>src/test/resources/testng/testng.xml</suiteXmlFile>-->
+                <suiteXmlFile>target/surefire-reports/testngfailed.xml</suiteXmlFile>
+            </suiteXmlFiles>
         </configuration>
     </plugin>
 
