@@ -143,59 +143,12 @@
             <!-- Sets the VM argument line used for unit tests are run. -->
             <suiteXmlFiles>
                 <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                <suiteXmlFile>test-output/testng-failed.xml</suiteXmlFile>
                 <!--<suiteXmlFile>target/surefire-reports/testngfailed.xml</suiteXmlFile>-->
             </suiteXmlFiles>
         </configuration>
     </plugin>
-
-    <plugin>
-
-        <artifactId>maven-resources-plugin</artifactId>
-
-        <version>3.0.1</version>
-
-        <executions>
-
-            <execution>
-
-                <id>copy-resources</id>
-
-                <!-- here the phase you need -->
-
-                <phase>validate</phase>
-
-                <goals>
-
-                    <goal>copy-resources</goal>
-
-                </goals>
-
-                <configuration>
-
-                    <outputDirectory>/target/failed-testng.xml</outputDirectory>
-
-                    <resources>
-
-                        <resource>
-
-                            <directory>src/</directory>
-
-                            <filtering>true</filtering>
-
-                        </resource>
-
-                    </resources>
-
-                </configuration>
-
-            </execution>
-
-        </executions>
-
-    </plugin>
-
-
-
 </plugins>
-</build>
-</project>
+
+    </build>
+    </project>

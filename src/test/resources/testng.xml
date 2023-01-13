@@ -4,7 +4,6 @@
     <test verbose="2" preserve-order="true" name="E:/Automation_Gan_Bhaanu">
         <<classes>
         <class name="runner.TestRunnerTestng"/>
-        <class name="runner.RerunnerTestng"/>
     </classes>
     </test>
 </suite>
