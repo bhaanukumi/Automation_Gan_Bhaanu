@@ -42,7 +42,7 @@ public class LoginPage {
 	//@FindBy(xpath="//img[@src='assets/images/MMH-logo.svg']")
 	//private WebElement MMHLOGO;
 
-	@FindBy(xpath="//button/span/span[text()='MMHLOGO']")
+	@FindBy(xpath="//button/span/span[text()='MMHLOGO1']")
 	private WebElement MMHLOGO;
 
 	@FindBy(how = How.XPATH, using = "//div[@class='appVersion']")
