@@ -26,7 +26,7 @@ public class LoginPage {
 	private static final Logger LOGGER = LogManager.getLogger(LoginStepDef.class);
 	
 	private LoginPage() {
-		
+		//LoginPage1
 	}
 	public static LoginPage getInstance() {
 		if(loginInstance==null) {
