@@ -8,6 +8,7 @@ import io.cucumber.java.en.When;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
+import org.openqa.selenium.safari.SafariDriver;
 import page_objects.LoginPage;
 import utilities.TestdataUtil;
 import utilities.WindowsProcessUtil;
@@ -156,5 +157,16 @@ public class LoginStepDef {
 			e.printStackTrace();
 		}
 
+	}
+
+	@Then("Open a New tab or New Window")
+	public void openANewTabOrNewWindow() {
+
+		try {
+			LoginPage.getInstance().openNewTab();
+		} catch (Exception e) {
+			LOGGER.error(e);
+			Assert.fail(e.getMessage());
+		}
 	}
 }

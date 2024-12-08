@@ -15,6 +15,7 @@ import static stepdefinition.LoginStepDef.strAppVersion;
 @CucumberOptions(features = {"src/test/resources/features"},
         monochrome = true,
         glue = {"stepdefinition"},
+        tags = "@WindowHandle1",
         plugin = {
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 "html:reports/WEB/index.html",
